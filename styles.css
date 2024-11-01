@@ -1,0 +1,123 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  margin: 0;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Label Colors */
+.container:first-of-type h2 {
+  color: green;
+}
+
+.container:last-of-type h2 {
+  color: red;
+}
+
+h2,
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Left Table - Green and Grey Zebra Stripes */
+.container:first-of-type tbody tr:nth-child(odd) {
+  background-color: #e6f7e6;
+}
+
+/* Light green */
+.container:first-of-type tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Light grey */
+
+/* Right Table - Red and Grey Zebra Stripes */
+.container:last-of-type tbody tr:nth-child(odd) {
+  background-color: #fde7e7;
+}
+
+/* Light red */
+.container:last-of-type tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Light grey */
+
+/* Table Section Separators */
+.section-divider td {
+  border-bottom: 3px solid #333;
+}
+
+/* Profit Styling */
+.profit {
+  background-color: #28a745;
+  /* Darker green background */
+  color: black;
+  /* Black text */
+  font-weight: bold;
+  /* Bold text for emphasis */
+}
+
+td {
+  text-align: right;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .container {
+    width: 45%;
+  }
+}

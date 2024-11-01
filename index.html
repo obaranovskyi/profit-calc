@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"">
+  <link rel=" stylesheet" href="./styles.css">
+  <title>Crypto Buy-Sell Calculator</title>
+</head>
+
+<body>
+
+  <!-- Left Form: Buy-Sell Calculation -->
+  <div class="container">
+    <h2>Buy-Sell Calculator</h2>
+    <h3>USDT - COIN - USDT</h3>
+    <label>Low Crypto Price: <input type="number" id="lowCryptoPrice" step="0.01" oninput="calculateEarnings()"></label>
+    <label>High Crypto Price: <input type="number" id="highCryptoPrice" step="0.01"
+        oninput="calculateEarnings()"></label>
+    <label>Amount to Invest: <input type="number" id="amountToInvest" step="0.01" oninput="calculateEarnings()"></label>
+
+    <h3>Transaction Details:</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Action</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody id="buySellDetails"></tbody>
+    </table>
+  </div>
+
+  <!-- Right Form: Sell-Buy Calculation -->
+  <div class="container">
+    <h2>Sell-Buy Calculator</h2>
+    <h3>COIN - USDT - COIN</h3>
+    <label>Sell Price: <input type="number" id="sellPrice" step="0.01" oninput="calculateReverseEarnings()"></label>
+    <label>Buy Price: <input type="number" id="buyPrice" step="0.01" oninput="calculateReverseEarnings()"></label>
+    <label>Coin Amount: <input type="number" id="coinAmount" step="0.000001"
+        oninput="calculateReverseEarnings()"></label>
+
+    <h3>Transaction Details:</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Action</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody id="sellBuyDetails"></tbody>
+    </table>
+  </div>
+
+  <script src="./main.js"></script>
+
+</body>
+
+</html>
