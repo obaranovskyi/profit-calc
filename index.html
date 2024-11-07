@@ -53,6 +53,14 @@
     </table>
   </div>
 
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register(
+        '/profit-calc/sw.js',
+        {scope: '/github-page-pwa/'}
+      )
+    }
+  </script>
   <script src="./main.js"></script>
 
 </body>
