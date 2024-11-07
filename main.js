@@ -1,7 +1,7 @@
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
-      .register("/profit-calc/sw.js")
+      .register("./profit-calc/sw.js")
       .then((registration) => {
         console.log(
           "Service Worker registered with scope:",
